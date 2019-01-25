@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ecole NaN</title>
+	<!-- Link CSS Start here -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Link CSS end here -->
+
+	<!-- script JS Start here -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<!-- script JS end here -->
+
+	<style type="text/css">
+		.sidenav {
+		    height: 100%;
+		    width: 250px;
+		    position: fixed;
+		    z-index: 1;
+		    top: 117px;
+		    left: 0;
+		    background-color: #111;
+		    overflow-x: hidden;
+		    overflow-y: auto;
+		    transition: 0.5s;
+		    padding-top: 60px;
+		}
+
+		.sidenav a {
+		    padding: 8px 8px 8px 32px;
+		    text-decoration: none;
+		    font-size: 25px;
+		    color: #818181;
+		    display: block;
+		    transition: 0.3s
+		}
+
+		.sidenav a:hover, .offcanvas a:focus{
+		    color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+		    position: absolute;
+		    top: 0;
+		    right: 25px;
+		    font-size: 36px;
+		    margin-left: 50px;
+		}
+
+		#main {
+		    transition: margin-left .5s;
+		    padding: 16px;
+		}
+		 @media( max-width:992px){
+		 	.navbar span{
+		 		background: #efefef;
+		 		display: block;
+		 	}
+
+		 	#nav-bar{display: none;}
+		 	#navbarNav{display: none;}
+		 	.sidenav{
+		 		top: 0;
+		 	}
+		 }
+
+
+
+	
+	</style>
+</head>
+<body>
+
+	<!-- Social network bar navigation -->
+	<section id="nav-bar-social">
+
+		<nav class="navbar navbar-expand-lg" style="background: black;">
+			<span class="hamburger-nav" style="font-size:30px;cursor:pointer; display: none;" onclick="ouvre()">&#9776; </span>
+	      <a class="navbar-brand" href="#home">Ecole NaN<img src=""></a>
+
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item">
+	            <a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#"><i class="fa fa-youtube"></i></a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#"><i class="fa fa-twitter"></i></a>
+	          </li>
+	        </ul>
+	    </div>
+    </nav>
+		
+	</section>
+	<!-- Social network bar navigation -->
+
+	<!-- section BAr de Navigation NaN -->
+	<section id="nav-bar">
+
+		<nav class="navbar navbar-expand-lg">
+	      <a class="navbar-brand" href="#"><img src="">Ecole NaN</a>
+
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">Home</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">About</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">Team</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="">Service</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="">Contacts</a>
+	          </li>
+	        </ul>
+	    </div>
+    </nav>
+		
+	</section>
+	<!-- End nav bar section -->
+
+	<!-- section slider carousel -->
+	<div id="slider">
+
+
+		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="img/01.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption"><h5>Bienvenue à l'Ecole NaN, une ecole atypique <br>Bonne viste à vous</h5></div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/mbr-3-1620x1080.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption"><h5>Bienvenue à l'Ecole NaN, une ecole atypique <br>Bonne viste à vous</h5></div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/mbr-1620x1080.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption"><h5>Bienvenue à l'Ecole NaN, une ecole atypique <br>Bonne viste à vous</h5></div>
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+		
+	</div>
+	<!-- end section slider carousel -->
+
+	<!-- Section A -->
+	<section id="nan-section-A">
+		<div class="container">
+			<div class="row">
+				<!-- first col-md-6 -->
+				<div class="col-md-6 col-sm-12">
+					<h2>About Us</h2>
+					<div class="nan-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</div>
+					<button type="button" class="btn btn-primary">Read More</button>
+				</div>
+				<!-- end first col-md-6 col-sm-12-->
+
+				<!-- Second col-md-6 col-sm-12-->
+				<div class="col-md-6 col-sm-12 ">
+					<p>Adobe Photoshop</p>
+					<div class="progress">
+						<div class="progress-bar" style="width: 75%;">75%</div>
+					</div>
+					<p>Dev Web</p>
+					<div class="progress">
+						<div class="progress-bar" style="width: 90%;">90%</div>
+					</div>
+					<p>eCommerce</p>
+					<div class="progress">
+						<div class="progress-bar" style="width: 60%;">60%</div>
+					</div>
+					<p>App Web & Mobile</p>
+					<div class="progress">
+						<div class="progress-bar" style="width: 85%;">85%</div>
+					</div>
+				</div>
+				<!-- end second col-md-6 -->
+			</div>
+		</div>
+	</section>
+	<!-- End Section A -->
+
+	<!--  Section B -->
+	<section id="nan-service-section">
+		<div class="container">
+			<h1>Nos Services</h1>
+			<div class="row nan-services">
+				<div class="col-md-3 text-center">
+					<div class="icon">
+						<i class="fa fa-desktop"></i>
+					</div>
+					<h3>Web development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+
+				<div class="col-md-3 text-center">
+					<div class="icon">
+						<i class="fa fa-desktop"></i>
+					</div>
+					<h3>App Apple</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+
+				<div class="col-md-3 text-center">
+					<div class="icon">
+						<i class="fa fa-desktop"></i>
+					</div>
+					<h3>App Web & Mobile App</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+
+				<div class="col-md-3 text-center">
+					<div class="icon">
+						<i class="fa fa-desktop"></i>
+					</div>
+					<h3>App Web & Mobile App</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End section nan service -->
+
+	<!-- NaN Team section -->
+	<section id="nan-team">
+		<div class="container">
+			<h1>Our Team</h1>
+			<div class="row">
+				<div class="col-md-3 nan-team-card text-center">
+					<div class="img-box">
+						<img class="img-responsive" src="img/girl.jpg">
+						<ul>
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<h2>Ghost Web</h2>
+					<h3>Dev, Prog, CEO</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+				<div class="col-md-3 nan-team-card text-center">
+					<div class="img-box">
+						<img class="img-responsive" src="img/girl.jpg">
+						<ul>
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<h2>Ghost Web</h2>
+					<h3>Dev, Prog, CEO</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+				<div class="col-md-3 nan-team-card text-center">
+					<div class="img-box">
+						<img class="img-responsive" src="img/girl.jpg">
+						<ul>
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<h2>Ghost Web</h2>
+					<h3>Dev, Prog, CEO</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+				<div class="col-md-3 nan-team-card text-center">
+					<div class="img-box">
+						<img class="img-responsive" src="img/girl.jpg">
+						<ul>
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<h2>Ghost Web</h2>
+					<h3>Dev, Prog, CEO</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Team section -->
+
+	<!-- promo section -->
+	<section id="nan-promo">
+		<div class="container">
+			<p>Obtenez gratuitement un nom de domain et Hebergement</p>
+			<a href="" class="btn btn-secondary">
+				Nous Contactez
+			</a>
+		</div>
+	</section>
+	<!-- End section prom -->
+	
+	<!--  NaN Commentaire section -->
+	<section id="nan-comment">
+		<div class="container">
+			<h1>Testimony</h1>
+			<p class="text-center">Ils nous ont fait confiance et ils sont maintenant satisfait</p>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<div class="nan-profil">
+						<img src="img/infinty.jpeg" class="nan-partenaire">
+						<h3>Infinity Web <span>Co-Founder at Infinity Group</span></h3>
+						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</blockquote>
+						
+					</div>
+				</div>
+
+				<div class="col-md-4 text-center">
+					<div class="nan-profil">
+						<img src="img/infinty.jpeg" class="nan-partenaire">
+						<h3>Infinity Web <span>Co-Founder at Infinity Group</span></h3>
+						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</blockquote>
+						
+					</div>
+				</div>
+
+				<div class="col-md-4 text-center">
+					<div class="nan-profil">
+						<img src="img/infinty.jpeg" class="nan-partenaire">
+						<h3>Infinity Web <span>Co-Founder at Infinity Group</span></h3>
+						<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</blockquote>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End NaN Commentaire section -->
+
+	<!-- Pour plus Info Nous contacter -->
+	<section id="nan-contact">
+		<div class="container">
+			<h1>Contactez-Nous</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<form class="contact-form">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Entrez Votre Nom">
+						</div>
+
+						<div class="form-group">
+							<input type="number" class="form-control" placeholder="Entrez Votre Contact">
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Entrez Votre Email">
+						</div>
+
+						<div class="form-group">
+							<textarea type="text" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+						</div>
+						<div class="form-group text-right">
+							<button class="btn btn-primary" type="submit">Contactez Nous</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6 nan-contact-info">
+					<div class="nan-follower">
+						<b>Address:</b> <i class="fa fa-map-marker"></i> Ghost Web Road, NaN School City, NaNC.
+					</div>
+
+					<div class="nan-follower">
+						<b>Telephone: </b><i class="fa fa-phone"></i> (+225) xx xx xx xx / xx xx xx
+					</div>
+
+					<div class="nan-follower">
+						<b>Email:</b> <i class="fa fa-envelope-o"></i> ghostweb@gmail.com
+					</div>
+
+					<!-- <div class="nan-follower">
+						<b>Address:</b>Ghost Web Road, NaN School City, NaNC.
+					</div> -->
+
+					<div class="nan-follower">
+						<b>Social Network:</b>
+						<a href="">fb</a>
+						<a href="">tw</a>
+						<a href="">yu</a>
+						<a href="">in</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End NaN Contact section -->
+	<!-- nan footer section -->
+	<section id="nan-footer">
+		<div class="container">
+			<div class="col-md-4 text-center"><p>Copyright &copy;</p></div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+<!-- <div id="hamburger" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="ferme()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div> -->
+
+<!-- <div class="col-sm-3 col-md-2 sidebar sidenav" id="hamburger">
+  <ul class="nav nav-sidebar">
+    <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+    <li><a href="#">Reports</a></li>
+    <li><a href="#">Analytics</a></li>
+    <li><a href="#">Export</a></li>
+  </ul>
+  <ul class="nav nav-sidebar">
+    <li><a href="">Nav item</a></li>
+    <li><a href="">Nav item again</a></li>
+    <li><a href="">One more nav</a></li>
+    <li><a href="">Another nav item</a></li>
+    <li><a href="">More navigation</a></li>
+  </ul>
+  <ul class="nav nav-sidebar">
+    <li><a href="">Nav item again</a></li>
+    <li><a href="">One more nav</a></li>
+    <li><a href="">Another nav item</a></li>
+  </ul>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function ouvre() {
+    document.getElementById("hamburger").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function ferme() {
+    document.getElementById("hamburger").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+</body>
+</html>
